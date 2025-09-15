@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { VisualCanvas } from "./visual-canvas"
 import { CodePreview } from "./code-preview"
-import { Play, Download, Save, Settings } from "lucide-react"
+import { ThemeToggle } from "./theme-toggle"
+import { Download, Save, Settings, Github } from "lucide-react"
 
 export function ScriptBuilder() {
   const [generatedCode, setGeneratedCode] = useState("")
@@ -27,6 +28,10 @@ export function ScriptBuilder() {
     URL.revokeObjectURL(url)
   }
 
+  const handleGitHubClick = () => {
+    window.open("https://github.com/klinshy/WA-visual-script-builder", "_blank")
+  }
+
   return (
     <div className="h-screen flex flex-col bg-background">
       {/* Header */}
@@ -39,6 +44,11 @@ export function ScriptBuilder() {
           </div>
 
           <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <Button variant="outline" size="sm" onClick={handleGitHubClick}>
+              <Github className="w-4 h-4 mr-2" />
+              GitHub
+            </Button>
             <Button variant="outline" size="sm">
               <Save className="w-4 h-4 mr-2" />
               Save
@@ -46,10 +56,6 @@ export function ScriptBuilder() {
             <Button variant="outline" size="sm" onClick={() => setShowCodePreview(!showCodePreview)}>
               <Settings className="w-4 h-4 mr-2" />
               {showCodePreview ? "Hide Code" : "Show Code"}
-            </Button>
-            <Button variant="secondary" size="sm">
-              <Play className="w-4 h-4 mr-2" />
-              Test
             </Button>
             <Button size="sm" onClick={handleExport}>
               <Download className="w-4 h-4 mr-2" />

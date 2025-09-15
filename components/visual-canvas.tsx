@@ -41,36 +41,42 @@ const BLOCK_TYPES = {
     color: "bg-green-500",
     ports: [{ id: "output", type: "output", label: "Next", dataType: "flow" }],
     fields: [{ name: "zoneName", label: "Zone Name", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-room#entering-leaving-zones",
   },
   onLeaveZone: {
     title: "On Leave Zone",
     color: "bg-green-500",
     ports: [{ id: "output", type: "output", label: "Next", dataType: "flow" }],
     fields: [{ name: "zoneName", label: "Zone Name", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-room#entering-leaving-zones",
   },
   onEnterArea: {
     title: "On Enter Area",
     color: "bg-green-500",
     ports: [{ id: "output", type: "output", label: "Next", dataType: "flow" }],
     fields: [{ name: "areaName", label: "Area Name", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-room#entering-leaving-areas",
   },
   onLeaveArea: {
     title: "On Leave Area",
     color: "bg-green-500",
     ports: [{ id: "output", type: "output", label: "Next", dataType: "flow" }],
     fields: [{ name: "areaName", label: "Area Name", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-room#entering-leaving-areas",
   },
   onPlayerJoin: {
     title: "On Player Join",
     color: "bg-green-500",
     ports: [{ id: "output", type: "output", label: "Next", dataType: "flow" }],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-players#onplayerjoin",
   },
   onPlayerLeave: {
     title: "On Player Leave",
     color: "bg-green-500",
     ports: [{ id: "output", type: "output", label: "Next", dataType: "flow" }],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-players#onplayerleave",
   },
   onChatMessage: {
     title: "On Chat Message",
@@ -80,42 +86,49 @@ const BLOCK_TYPES = {
       { name: "message", label: "Message Contains", type: "text" },
       { name: "scope", label: "Scope", type: "select", options: ["local", "bubble"] },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-chat#onchatmessage",
   },
   onPlayerMove: {
     title: "On Player Move",
     color: "bg-green-500",
     ports: [{ id: "output", type: "output", label: "Next", dataType: "flow" }],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-player#onplayermove",
   },
   onCameraUpdate: {
     title: "On Camera Update",
     color: "bg-green-500",
     ports: [{ id: "output", type: "output", label: "Next", dataType: "flow" }],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-camera#oncameraupdate",
   },
   onVariableChange: {
     title: "On Variable Change",
     color: "bg-green-500",
     ports: [{ id: "output", type: "output", label: "Next", dataType: "flow" }],
     fields: [{ name: "variableName", label: "Variable Name", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-state#onvariablechange",
   },
   onEvent: {
     title: "On Event",
     color: "bg-green-500",
     ports: [{ id: "output", type: "output", label: "Next", dataType: "flow" }],
     fields: [{ name: "eventName", label: "Event Name", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-event#onevent",
   },
   onProximityMeetingJoin: {
     title: "On Meeting Join",
     color: "bg-green-500",
     ports: [{ id: "output", type: "output", label: "Next", dataType: "flow" }],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-spaces#onproximitymeetingjoin",
   },
   onProximityMeetingLeave: {
     title: "On Meeting Leave",
     color: "bg-green-500",
     ports: [{ id: "output", type: "output", label: "Next", dataType: "flow" }],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-spaces#onproximitymeetingleave",
   },
 
   // Chat Actions
@@ -131,6 +144,7 @@ const BLOCK_TYPES = {
       { name: "scope", label: "Scope", type: "select", options: ["local", "bubble"] },
       { name: "author", label: "Author", type: "text" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-chat#sendchatmessage",
   },
   openChat: {
     title: "Open Chat",
@@ -140,6 +154,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-chat#openchat",
   },
   closeChat: {
     title: "Close Chat",
@@ -149,6 +164,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-chat#closechat",
   },
   startTyping: {
     title: "Start Typing",
@@ -161,6 +177,7 @@ const BLOCK_TYPES = {
       { name: "scope", label: "Scope", type: "select", options: ["local", "bubble"] },
       { name: "author", label: "Author", type: "text" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-chat#starttyping",
   },
   stopTyping: {
     title: "Stop Typing",
@@ -170,6 +187,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [{ name: "scope", label: "Scope", type: "select", options: ["local", "bubble"] }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-chat#stoptyping",
   },
 
   // Camera Actions
@@ -189,6 +207,7 @@ const BLOCK_TYPES = {
       { name: "smooth", label: "Smooth Transition", type: "checkbox" },
       { name: "duration", label: "Duration (ms)", type: "number" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-camera#movecamera",
   },
   followPlayer: {
     title: "Follow Player",
@@ -198,6 +217,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [{ name: "smooth", label: "Smooth Transition", type: "checkbox" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-camera#followplayer",
   },
 
   // Player Actions
@@ -213,6 +233,7 @@ const BLOCK_TYPES = {
       { name: "y", label: "Y Position", type: "number" },
       { name: "speed", label: "Speed", type: "number" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-player#moveto",
   },
   teleportPlayer: {
     title: "Teleport Player",
@@ -225,6 +246,7 @@ const BLOCK_TYPES = {
       { name: "x", label: "X Position", type: "number" },
       { name: "y", label: "Y Position", type: "number" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-player#teleport",
   },
   setPlayerOutline: {
     title: "Set Player Outline",
@@ -238,6 +260,7 @@ const BLOCK_TYPES = {
       { name: "green", label: "Green (0-255)", type: "number" },
       { name: "blue", label: "Blue (0-255)", type: "number" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-player#setoutlinecolor",
   },
   removePlayerOutline: {
     title: "Remove Player Outline",
@@ -247,6 +270,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-player#removeoutlinecolor",
   },
 
   // Sound Actions
@@ -262,6 +286,7 @@ const BLOCK_TYPES = {
       { name: "volume", label: "Volume (0-1)", type: "number" },
       { name: "loop", label: "Loop", type: "checkbox" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-sound#playsound",
   },
   stopSound: {
     title: "Stop Sound",
@@ -271,6 +296,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [{ name: "soundUrl", label: "Sound URL", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-sound#stopsound",
   },
 
   // UI Actions
@@ -292,6 +318,7 @@ const BLOCK_TYPES = {
         options: ["normal", "primary", "success", "warning", "error", "disabled"],
       },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-ui#openpopup",
   },
   displayActionMessage: {
     title: "Display Action Message",
@@ -304,6 +331,7 @@ const BLOCK_TYPES = {
       { name: "message", label: "Message", type: "text" },
       { name: "type", label: "Type", type: "select", options: ["message", "warning"] },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-ui#displayactionmessage",
   },
   openModal: {
     title: "Open Modal",
@@ -318,6 +346,7 @@ const BLOCK_TYPES = {
       { name: "position", label: "Position", type: "select", options: ["center", "left", "right"] },
       { name: "allowApi", label: "Allow API", type: "checkbox" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-ui#openmodal",
   },
   closeModal: {
     title: "Close Modal",
@@ -327,6 +356,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-ui#closemodal",
   },
   openWebsite: {
     title: "Open Website",
@@ -357,6 +387,7 @@ const BLOCK_TYPES = {
       { name: "height", label: "Height", type: "text" },
       { name: "allowApi", label: "Allow API", type: "checkbox" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-ui#openwebsite",
   },
   addActionButton: {
     title: "Add Action Button",
@@ -372,6 +403,7 @@ const BLOCK_TYPES = {
       { name: "toolTip", label: "Tooltip", type: "text" },
       { name: "bgColor", label: "Background Color", type: "text" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-ui#addactionbutton",
   },
   removeActionButton: {
     title: "Remove Action Button",
@@ -381,6 +413,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [{ name: "id", label: "Button ID", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-ui#removeactionbutton",
   },
 
   // Navigation Actions
@@ -392,6 +425,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [{ name: "url", label: "Room URL", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-nav#gotoroom",
   },
   openTab: {
     title: "Open Tab",
@@ -401,6 +435,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [{ name: "url", label: "URL", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-nav#opentab",
   },
   goToPage: {
     title: "Go To Page",
@@ -410,6 +445,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [{ name: "url", label: "URL", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-nav#gotopage",
   },
 
   // Room Actions
@@ -421,6 +457,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [{ name: "layerName", label: "Layer Name", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-room#showlayer",
   },
   hideLayer: {
     title: "Hide Layer",
@@ -430,6 +467,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [{ name: "layerName", label: "Layer Name", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-room#hidelayer",
   },
   setLayerProperty: {
     title: "Set Layer Property",
@@ -443,6 +481,7 @@ const BLOCK_TYPES = {
       { name: "propertyName", label: "Property Name", type: "text" },
       { name: "propertyValue", label: "Property Value", type: "text" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-room#setlayerproperty",
   },
   setTiles: {
     title: "Set Tiles",
@@ -457,6 +496,7 @@ const BLOCK_TYPES = {
       { name: "tile", label: "Tile ID/Name", type: "text" },
       { name: "layer", label: "Layer Name", type: "text" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-room#settiles",
   },
 
   // Controls Actions
@@ -468,6 +508,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-controls#disableplayercontrols",
   },
   restorePlayerControls: {
     title: "Restore Player Controls",
@@ -477,6 +518,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-controls#restoreplayercontrols",
   },
   disableWebcam: {
     title: "Disable Webcam",
@@ -486,6 +528,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-controls#disablewebcam",
   },
   restoreWebcam: {
     title: "Restore Webcam",
@@ -495,6 +538,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-controls#restorewebcam",
   },
   disableMicrophone: {
     title: "Disable Microphone",
@@ -504,6 +548,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-controls#disablemicrophone",
   },
   restoreMicrophone: {
     title: "Restore Microphone",
@@ -513,6 +558,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-controls#restoremicrophone",
   },
 
   // Event Actions
@@ -527,6 +573,7 @@ const BLOCK_TYPES = {
       { name: "eventName", label: "Event Name", type: "text" },
       { name: "data", label: "Data", type: "text" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-event#broadcastevent",
   },
 
   // Spaces Actions
@@ -541,6 +588,7 @@ const BLOCK_TYPES = {
       { name: "spaceName", label: "Space Name", type: "text" },
       { name: "filterType", label: "Filter Type", type: "select", options: ["everyone", "streaming"] },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-spaces#joinspace",
   },
   leaveSpace: {
     title: "Leave Space",
@@ -550,6 +598,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-spaces#leavespace",
   },
   startStreaming: {
     title: "Start Streaming",
@@ -559,6 +608,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-spaces#startstreaming",
   },
   stopStreaming: {
     title: "Stop Streaming",
@@ -568,6 +618,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-spaces#stopstreaming",
   },
 
   // Control Flow
@@ -593,6 +644,7 @@ const BLOCK_TYPES = {
       },
       { name: "value", label: "Value", type: "text" },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-player#getting-player-information",
   },
   delay: {
     title: "Wait/Delay",
@@ -602,6 +654,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [{ name: "duration", label: "Duration (ms)", type: "number" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-start#settimeout",
   },
   loop: {
     title: "Loop",
@@ -612,6 +665,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "After Loop", dataType: "flow" },
     ],
     fields: [{ name: "count", label: "Loop Count", type: "number" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-start#setinterval",
   },
 
   // Variables
@@ -627,6 +681,7 @@ const BLOCK_TYPES = {
       { name: "value", label: "Value", type: "text" },
       { name: "scope", label: "Scope", type: "select", options: ["room", "world"] },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-state#setvariable",
   },
   getVariable: {
     title: "Get Variable",
@@ -636,6 +691,7 @@ const BLOCK_TYPES = {
       { id: "output", type: "output", label: "Next", dataType: "flow" },
     ],
     fields: [{ name: "variableName", label: "Variable Name", type: "text" }],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-state#getvariable",
   },
   setPlayerVariable: {
     title: "Set Player Variable",
@@ -648,9 +704,8 @@ const BLOCK_TYPES = {
       { name: "variableName", label: "Variable Name", type: "text" },
       { name: "value", label: "Value", type: "text" },
       { name: "public", label: "Public", type: "checkbox" },
-      { name: "persist", label: "Persist", type: "checkbox" },
-      { name: "scope", label: "Scope", type: "select", options: ["room", "world"] },
     ],
+    docUrl: "https://docs.workadventu.re/developer/map-scripting/references/api-player#setplayervariable",
   },
 }
 
@@ -757,15 +812,29 @@ export function VisualCanvas({ onCodeChange }: VisualCanvasProps) {
         <Card className={`p-3 min-w-[200px] ${blockType.color} text-white shadow-lg`}>
           <div className="flex justify-between items-center mb-2">
             <h3 className="font-semibold text-sm">{blockType.title}</h3>
-            <button
-              onClick={(e) => {
-                e.stopPropagation()
-                deleteBlock(block.id)
-              }}
-              className="text-white hover:text-red-200 text-xs"
-            >
-              ×
-            </button>
+            <div className="flex items-center gap-1">
+              {blockType.docUrl && (
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    window.open(blockType.docUrl, "_blank")
+                  }}
+                  className="text-white hover:text-blue-200 text-sm font-bold w-5 h-5 rounded-full border border-white flex items-center justify-center"
+                  title="View Documentation"
+                >
+                  ?
+                </button>
+              )}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation()
+                  deleteBlock(block.id)
+                }}
+                className="text-white hover:text-red-200 text-xs"
+              >
+                ×
+              </button>
+            </div>
           </div>
 
           {/* Input ports */}
