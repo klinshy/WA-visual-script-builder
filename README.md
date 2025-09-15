@@ -4,7 +4,7 @@ A comprehensive drag-and-drop visual programming interface for creating WorkAdve
 
 ## 🚀 Live Demo
 
-**[Try it here: https://wa-script-builder.vercel.app/](https://wa-script-builder.vercel.app/)**
+**[Try it here](https://wa-script-builder.vercel.app/)**
 
 ⚠️ **Note: This is a quick experiment - bugs included!** This is a proof-of-concept built to explore visual programming for WorkAdventure. Expect rough edges and incomplete features.
 
