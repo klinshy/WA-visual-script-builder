@@ -1,30 +1,39 @@
-# Visual script builder
+# WorkAdventure Visual Script Builder
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+A comprehensive drag-and-drop visual programming interface for creating WorkAdventure map scripts without coding. This tool transforms complex TypeScript scripting into an intuitive block-based system similar to Scratch.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/kilian-9243s-projects/v0-visual-script-builder)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/wfY8PF8uwny)
+## 🚀 Live Demo
 
-## Overview
+**[Try it here: https://wa-script-builder.vercel.app/](https://wa-script-builder.vercel.app/)**
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+⚠️ **Note: This is a quick experiment - bugs included!** This is a proof-of-concept built to explore visual programming for WorkAdventure. Expect rough edges and incomplete features.
 
-## Deployment
+## Features
 
-Your project is live at:
+- **Visual Canvas**: Drag and drop blocks onto a canvas and connect them with visual lines
+- **Complete API Coverage**: 60+ blocks covering all WorkAdventure APIs (chat, camera, player controls, UI, navigation, rooms, spaces, events, variables, and more)
+- **Control Flow**: If/then logic, loops, and conditional statements with visual connections
+- **Real-time Code Generation**: Automatically generates clean TypeScript code as you build
+- **Interactive Properties**: Edit block parameters directly in the visual interface
+- **Professional Output**: Generates production-ready WorkAdventure scripts
 
-**[https://vercel.com/kilian-9243s-projects/v0-visual-script-builder](https://vercel.com/kilian-9243s-projects/v0-visual-script-builder)**
+## What it does
 
-## Build your app
+Perfect for map creators who want to add interactive features like custom chat commands, camera controls, player interactions, UI elements, and complex game mechanics without writing code. Makes WorkAdventure scripting accessible to designers and non-programmers while still generating professional-quality TypeScript output.
 
-Continue building your app on:
+## Tech Stack
 
-**[https://v0.app/chat/projects/wfY8PF8uwny](https://v0.app/chat/projects/wfY8PF8uwny)**
+Built with React, Next.js, and a custom visual programming engine designed specifically for WorkAdventure's API structure.
 
-## How It Works
+## Getting Started
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+\`\`\`bash
+npm install
+npm run dev
+\`\`\`
+
+Open [http://localhost:3000](http://localhost:3000) to see the visual script builder.
+
+## Contributing
+
+This is an experimental project. Feel free to fork, experiment, and submit improvements!
